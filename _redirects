@@ -1,0 +1,7 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://www.whataleahdo.com/* https://www.whatisaleahdoing.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://flamboyant-cray-72a101.netlify.com/* https://www.whatisaleahdoing.com/:splat 301!
