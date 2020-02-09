@@ -12,7 +12,8 @@ function App() {
       <div className="App__context dtc tc v-mid dib br3 pa3 ma2 grow">
         <div>
           <h1>Aleah is</h1>
-          <h1>{whatIsSheDoing('Watching', 'YouTube')}</h1>
+          <h1>{whatIsSheDoing('Singing', 'I believe I can fly')}</h1>
+          <h1>Why? I'm not sure :p</h1>
           <div className="App__image"></div>
         </div>
         <img src={logo} className="App__logo" alt="Wooleah logo"></img>
