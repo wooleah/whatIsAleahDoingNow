@@ -1,15 +1,16 @@
-@font-face {
+/* @font-face {
   font-family: 'Sriracha', cursive;
   font-style: normal;
   font-weight: normal;
   src: local('Sriracha'), url('Sriracha-Regular.ttf') format('ttf');
-}
+} */
 
 .App__context {
   user-select: none;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Rancho', serif;
   font-weight: 200;
-  text-shadow: 4px 4px 4px #aaa;
+  font-size: x-large;
+  /* text-shadow: 4px 4px 4px #aaa; */
 }
 .App__logo {
   width: 50px;

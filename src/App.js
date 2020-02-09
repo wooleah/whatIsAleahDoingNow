@@ -9,7 +9,7 @@ function whatIsSheDoing(verb, noun) {
 function App() {
   return (
     <div className="App dt vh-100 w-100 bg-light-yellow">
-      <div className="App__context dtc tc v-mid dib br3 pa3 ma2 grow">
+      <div className="App__context dtc tc v-mid dib br3 pa3 ma2 grow font-effect-shadow-multiple">
         <div>
           <h1>Aleah is</h1>
           <h1>{whatIsSheDoing('Playing', 'Zelda')}</h1>
