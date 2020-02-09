@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './wooleahLogo.png';
 import './App.css';
+
+function whatIsSheDoing(verb, noun) {
+  return `${verb} ${noun}`;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App dt vh-100 w-100 bg-light-gray">
+      <div className="App__context dtc tc v-mid dib br3 pa3 ma2 grow">
+        <div>
+          <h1>Aleah is</h1>
+          <h1>{whatIsSheDoing('Watching', 'YouTube')}</h1>
+          <div className="App__image"></div>
+        </div>
+        <img src={logo} className="App__logo" alt="Wooleah logo"></img>
+      </div>
     </div>
   );
 }
