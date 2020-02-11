@@ -9,17 +9,19 @@ const axios = require('axios');
 // TODO 2. console log it to make a full sentence with subject Aleah
 // TODO 3. turn it into a netlify serverless function
 
-axios.get('https://icanhazdadjoke.com/', {
-  "headers": {
-    "Accept": "application/json"
-  }
-})
-  .then(res => res.data)
-  .then(data => ({
-    statusCode: 200,
-    body: data.joke
-  }))
-  .catch(error => ({
-    statusCode: 422,
-    body: String(error)
-  }))
+exports.handler = (event, context, callback) => {
+  return axios.get('https://icanhazdadjoke.com/', {
+    "headers": {
+      "Accept": "application/json"
+    }
+  })
+    .then(res => res.data)
+    .then(data => ({
+      statusCode: 200,
+      body: data.joke
+    }))
+    .catch(error => ({
+      statusCode: 422,
+      body: String(error)
+    }))
+}
