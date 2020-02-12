@@ -15,7 +15,7 @@ class Joke extends Component {
     }
 
     componentDidMount() {
-        fetch(ENDPOINT.netlify)
+        fetch(ENDPOINT.serverless)
             .then(res => res.json())
             .then(data => this.setState({joke: data.input}))
             .catch(console.log)
