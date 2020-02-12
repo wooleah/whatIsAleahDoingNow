@@ -58,12 +58,12 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  rank:
-    handler: handler.rank
-    events:
-      - http:
-          path: rank
-          method: get
+  # rank:
+  #   handler: handler.rank
+  #   events:
+  #     - http:
+  #         path: rank
+  #         method: get
   joke:
     handler: handler.joke
     events:

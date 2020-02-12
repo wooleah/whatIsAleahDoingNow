@@ -18,7 +18,7 @@ module.exports.joke = async event => {
 
   return {
     statusCode,
-    header: {
+    headers: {
       'Access-Control-Allow-Origin': '*'
     },
     body: JSON.stringify(
