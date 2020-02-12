@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './wooleahLogo.png';
 import './App.css';
+import Joke from './components/Joke';
 
 function whatIsSheDoing(verb, noun) {
   return `${verb} ${noun}`;
@@ -13,7 +14,7 @@ function App() {
         <div>
           <h1>Aleah is</h1>
           <h1>{whatIsSheDoing('Thinking', 'of this great joke:')}</h1>
-          <h1>What's the difference between a guitar and a fish? You can tune a guitar but you can't "tuna" fish!</h1>
+          <Joke />
           <div className="App__image"></div>
         </div>
         <img src={logo} className="App__logo" alt="Wooleah logo"></img>
